@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "16233516",
+      "name": "user",
+      "font_class": "yonghu",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "18001435",
+      "name": "login",
+      "font_class": "login",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "18348955",
+      "name": "Sign up",
+      "font_class": "lujing6",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
       "icon_id": "15341928",
       "name": "成绩",
       "font_class": "chengji",
