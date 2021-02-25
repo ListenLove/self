@@ -1,0 +1,70 @@
+@import "variable";
+// 盒子内文字不换行，超出指定盒子宽度时折叠为省略形式
+@mixin no_wrap() {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+// 设置元素背景颜色
+@mixin bg_color() {
+  background-color: $light_theme_background_color;
+  [theme=light] & {
+    // 设置为亮色背景
+    background-color: $light_theme_background_color;
+  }
+  [theme=dark] & {
+    // 设置为暗色背景
+    background-color: $dark_theme_background_color;
+  }
+}
+
+// 设置元素次级背景颜色
+@mixin bg_sub_color() {
+  background-color: $light_theme_sub_background_color;
+  [theme=light] & {
+    // 设置为亮色背景
+    background-color: $light_theme_sub_background_color;
+  }
+  [theme=dark] & {
+    // 设置为暗色背景
+    background-color: $dark_theme_sub_background_color;
+  }
+}
+
+// 设置元素内容颜色
+@mixin content_color() {
+  color: $light_theme_color;
+  [theme=light] & {
+    // 设置为亮色内容
+    color: $light_theme_color;
+  }
+  [theme=dark] & {
+    // 设置为暗色内容
+    color: $dark_theme_color;
+  }
+}
+// 设置次级内容颜色
+@mixin content_sub_color() {
+  color: $light_theme_sub_color;
+  [theme=light] & {
+    // 设置为次级亮色内容
+    color: $light_theme_sub_color;
+  }
+  [theme=dark] & {
+    // 设置为次级暗色内容
+    color: $dark_theme_sub_color;
+  }
+}
+
+@mixin border_color() {
+  border-color: $light_theme_sub_color;
+  [theme=light] & {
+    // 设置为亮色背景
+    border-color: $light_theme_sub_color;
+  }
+  [theme=dark] & {
+    // 设置为暗色背景
+    border-color: $dark_theme_sub_color;
+  }
+}

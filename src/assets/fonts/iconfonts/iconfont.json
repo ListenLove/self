@@ -1,0 +1,44 @@
+{
+  "id": "2386962",
+  "name": "self",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "15341928",
+      "name": "成绩",
+      "font_class": "chengji",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "16017193",
+      "name": "17home",
+      "font_class": "17home",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "16017198",
+      "name": "24madel",
+      "font_class": "24madel",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "16017202",
+      "name": "26manage",
+      "font_class": "26manage",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "16017204",
+      "name": "30noticeboard",
+      "font_class": "30noticeboard",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    }
+  ]
+}
