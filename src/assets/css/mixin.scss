@@ -68,3 +68,25 @@
     border-color: $dark_theme_sub_color;
   }
 }
+@mixin button_bg_color() {
+  background-color: #4c6069;
+  [theme=light] & {
+    // 设置为亮色背景
+    background-color: #4c6069;
+  }
+  [theme=dark] & {
+    // 设置为暗色背景
+    background-color: #1d2b39;
+  }
+}
+@mixin button_bg_sub_color() {
+  background-color: #362525;
+  [theme=light] & {
+    // 设置为亮色背景
+    background-color: #1d2b39;
+  }
+  [theme=dark] & {
+    // 设置为暗色背景
+    background-color: #111;
+  }
+}

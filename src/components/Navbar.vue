@@ -46,17 +46,17 @@
         <div class="sign-in" v-show="!hiddenChoices">
 
           <a href="javascript:">
-            <el-tooltip class="item" :effect="themeNow" content="登录" placement="top-start">
+            <el-tooltip class="item" :effect="getTheme" content="登录" placement="top-start">
               <svg class="icon" aria-hidden="true">
                 <use xlink:href="#icon-login"></use>
               </svg>
             </el-tooltip>
           </a>
         </div>
-        <div class="sign-up" v-show="!hiddenChoices">
+        <div class="sign-up" v-show="!hiddenChoices" @click.prevent="toRegisterPage">
 
           <a href="javascript:">
-            <el-tooltip class="item" :effect="themeNow" content="注册" placement="top-start">
+            <el-tooltip class="item" :effect="getTheme" content="注册" placement="top-start">
               <svg class="icon" aria-hidden="true">
                 <use xlink:href="#icon-lujing6"></use>
               </svg>
@@ -71,42 +71,63 @@
 
 <script>
 import '@/assets/fonts/iconfonts/iconfont'
+import {mapActions, mapGetters} from 'vuex'
 
 export default {
   name: "Navbar",
+  computed: {
+    ...mapGetters([
+      'getTheme',
+      'getThemes'
+    ])
+  },
   data() {
     return {
-      themes: ['light', 'dark'],
       hiddenChoices: true,
-      themeNow: 'light'
     }
   },
   methods: {
+    ...mapActions([
+      'setShowRegisterPage',
+      'setThemeNowAct'
+    ]),
     changeTheme() {
-      this.themeNow = document.documentElement.getAttribute("theme")
-      let index = this.themes.indexOf(this.themeNow)
-      if ((index + 1) < this.themes.length) {
+      let themeNow = this.getTheme
+      let themes = this.getThemes
+      let index = themes.indexOf(themeNow)
+      if ((index + 1) < themes.length) {
         index++
       } else {
         index = 0
       }
-      this.themeNow = this.themes[index]
+      themeNow = themes[index]
       const h = this.$createElement;
       this.$message({
         message: h('p', null, [
           h('span', null, '切换为 '),
-          h('b', {style: 'color: teal'}, this.themeNow),
+          h('b', {style: 'color: teal'}, themeNow),
           h('span', null, ' 主题')
         ]),
         duration: 1000,
       });
-      document.documentElement.setAttribute("theme", this.themeNow)
+      this.setThemeNowAct(themeNow)
     },
     showChoices() {
       this.hiddenChoices = false
     },
     hiddenChoice() {
       this.hiddenChoices = true
+    },
+    toRegisterPage() {
+      // 点击打开 注册页面
+      const h = this.$createElement;
+      this.setShowRegisterPage(true)
+      this.$message({
+        message: h('p', null, ['打开',
+          h('b', {style: 'color: teal'}, '注册页'),
+        ]),
+        duration: 800,
+      });
     }
   }
 }
@@ -123,7 +144,7 @@ export default {
     min-height: 100vh;
     //background-color: $light_theme_background_color;
     @include bg_color();
-    float: left;
+    //float: left;
     border-radius: 5px;
     position: relative;
     display: flex;

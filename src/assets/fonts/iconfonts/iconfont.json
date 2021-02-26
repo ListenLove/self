@@ -6,6 +6,48 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "17560947",
+      "name": "lock",
+      "font_class": "lock",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "4541386",
+      "name": "wrong",
+      "font_class": "wrong",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "5791714",
+      "name": "confirm",
+      "font_class": "confirm",
+      "unicode": "ed51",
+      "unicode_decimal": 60753
+    },
+    {
+      "icon_id": "5995037",
+      "name": "notice 警告说明",
+      "font_class": "noticejinggaoshuoming",
+      "unicode": "e6bf",
+      "unicode_decimal": 59071
+    },
+    {
+      "icon_id": "4574791",
+      "name": "email",
+      "font_class": "email",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "3538646",
+      "name": "Info",
+      "font_class": "Info",
+      "unicode": "ec98",
+      "unicode_decimal": 60568
+    },
+    {
       "icon_id": "16233516",
       "name": "user",
       "font_class": "yonghu",

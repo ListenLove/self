@@ -1,17 +1,19 @@
 <template>
   <div class="root">
-    项目主页
     <navbar></navbar>
+    <register></register>
   </div>
 </template>
 
 <script>
 import Navbar from "@/components/Navbar"
+import Register from "@/components/Register"
 
 export default {
   name: "homepage",
   components: {
-    Navbar
+    Navbar,
+    Register,
   },
   methods: {
     selfNotification() {
@@ -19,7 +21,7 @@ export default {
 
       this.$notify({
         title: 'Self 站内通信',
-        message: h('i', {style: 'color: teal'}, 'Self 站前后端尚在施工当中，感谢您的关注！'),
+        message: h('i', {style: 'color: teal'}, 'Self 站尚在施工当中，感谢关注！'),
         type: "info",
         duration: 0
       });
@@ -32,5 +34,16 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "src/assets/css/mixin";
+
+.root {
+  height: 100%;
+  width: 980px;
+  //@include bg_color();
+  //background-color: red;
+  background-color: #2c3e50;
+  margin: 0 auto;
+  //position: relative;
+}
 
 </style>
