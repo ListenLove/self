@@ -6,6 +6,90 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "19036552",
+      "name": "more",
+      "font_class": "more",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "6622559",
+      "name": "code",
+      "font_class": "code",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "7964349",
+      "name": "Plus",
+      "font_class": "Plus",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "15913213",
+      "name": "html",
+      "font_class": "html-copy",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "16276775",
+      "name": "sql",
+      "font_class": "sql",
+      "unicode": "e700",
+      "unicode_decimal": 59136
+    },
+    {
+      "icon_id": "16744110",
+      "name": "science",
+      "font_class": "bianzu5",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "17704860",
+      "name": "More",
+      "font_class": "More",
+      "unicode": "e692",
+      "unicode_decimal": 59026
+    },
+    {
+      "icon_id": "18658932",
+      "name": "sql",
+      "font_class": "sql1",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "3716324",
+      "name": "letter-f",
+      "font_class": "letter-f",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "3716325",
+      "name": "letter-e",
+      "font_class": "letter-e",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "3716330",
+      "name": "letter-l",
+      "font_class": "letter-l",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "3716358",
+      "name": "letter-s",
+      "font_class": "letter-s",
+      "unicode": "e661",
+      "unicode_decimal": 58977
+    },
+    {
       "icon_id": "17560947",
       "name": "lock",
       "font_class": "lock",

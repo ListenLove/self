@@ -87,7 +87,7 @@ export default {
 .register {
   --op: 0.5;
   --shadow-color: rgba(255, 255, 255, 0.5);
-
+  z-index: 999;
   position: absolute;
   left: 0;
   top: 0;

@@ -6,6 +6,27 @@
   white-space: nowrap;
 }
 
+// 限制行数
+@mixin clamp($row) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $row;
+}
+
+@mixin mask_bg() {
+  background-color: #6e8599;
+  [theme=light] & {
+    // 设置为亮色背景
+    background-color: #6e8599;
+  }
+  [theme=dark] & {
+    // 设置为暗色背景
+    background-color: #181f3a;
+  }
+}
+
 // 设置元素背景颜色
 @mixin bg_color() {
   background-color: $light_theme_background_color;
@@ -44,6 +65,7 @@
     color: $dark_theme_color;
   }
 }
+
 // 设置次级内容颜色
 @mixin content_sub_color() {
   color: $light_theme_sub_color;
@@ -68,6 +90,7 @@
     border-color: $dark_theme_sub_color;
   }
 }
+
 @mixin button_bg_color() {
   background-color: #4c6069;
   [theme=light] & {
@@ -79,6 +102,31 @@
     background-color: #1d2b39;
   }
 }
+
+@mixin button_bg_sub_color() {
+  background-color: #362525;
+  [theme=light] & {
+    // 设置为亮色背景
+    background-color: #1d2b39;
+  }
+  [theme=dark] & {
+    // 设置为暗色背景
+    background-color: #111;
+  }
+}
+
+@mixin box-shadow-style() {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  [theme=light] & {
+    // 设置为亮色背景
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  [theme=dark] & {
+    // 设置为暗色背景
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+}
+
 @mixin button_bg_sub_color() {
   background-color: #362525;
   [theme=light] & {

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import homepage from "@/views/homepage";
-
+import Description from "@/views/Description";
+import Dashboard from "@/views/Dashboard";
 Vue.use(VueRouter)
 
 const routes = [
@@ -20,8 +20,17 @@ const routes = [
   }*/
   {
     path: '/',
-    name: 'Home',
-    component: homepage
+    redirect: '/description',
+  },
+  {
+    path:'/description',
+    name: 'Description',
+    component: Description,
+  },
+  {
+    path:'/dashboard',
+    name: 'Dashboard',
+    component: Dashboard,
   },
   /*{
     path: '/register',
